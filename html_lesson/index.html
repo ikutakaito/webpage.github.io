@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <meta name="description" content="smaple text smaple text smaple text smaple text smaple text">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSSの反映 -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <div class="hero">
+        <strong>Hello World!</strong> <!-- strongタグ＝重要な文字を強調するタグ。1ページに1,2個まで -->
+        <div class="hero-particles" id="particles-js"></div>
+        <video autoplay loop muted preload> <!-- videoタグ＝動画ファイルを置ける。動画は１つのみ。これだけでは、再生されない。 --> <!-- autoplay属性＝自動で再生される。loop属性＝繰返し。muted属性＝音が出ないようにする。preload属性＝HTMLが読み込まれたら即座にMP4の読み込みを開始する。 -->
+            <source src="./assets/videos/hero.mp4" type="video/mp4"> <!-- sourceタグ＝videoタグで囲うことで、福栖の動画ファイルを置くことができる。 -->
+        </video>
+    </div>
+
+    <header class="header"> <!-- headerタグ＝ヘッダーを作るためのタグ -->
+        <h1 class="header-logo">
+            <a href="#">
+                <svg height="80" preserveAspectRatio="xMidYMid" viewBox="0 .232 259.247 255.761" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m245.235 153.524c14.012-14.012 14.011-36.811 0-50.823-6.787-6.788-15.812-10.525-25.411-10.525-2.28 0-4.523.208-6.712.617 9.538-6.524 15.72-17.495 15.72-29.694 0-19.816-16.122-35.937-35.938-35.937-12.223 0-23.213 6.205-29.733 15.776 2.157-11.377-1.226-23.537-9.87-32.18-6.785-6.788-15.811-10.526-25.409-10.526-9.6 0-18.624 3.738-25.412 10.526-8.643 8.643-12.026 20.803-9.87 32.18-6.519-9.57-17.509-15.776-29.733-15.776-19.815 0-35.936 16.12-35.936 35.937 0 12.2 6.18 23.17 15.718 29.694a36.487 36.487 0 0 0 -6.711-.617c-9.6 0-18.624 3.738-25.411 10.526-6.789 6.787-10.527 15.812-10.527 25.41 0 9.6 3.738 18.624 10.526 25.412 6.787 6.787 15.812 10.526 25.41 10.526 2.28 0 4.523-.208 6.712-.618-9.538 6.525-15.718 17.496-15.718 29.695 0 19.815 16.12 35.936 35.936 35.936 12.224 0 23.215-6.206 29.734-15.776-2.157 11.378 1.226 23.538 9.87 32.18 6.787 6.788 15.812 10.526 25.41 10.526 9.6 0 18.625-3.738 25.412-10.526 8.643-8.643 12.026-20.803 9.869-32.18 6.52 9.57 17.51 15.776 29.733 15.776 19.816 0 35.937-16.12 35.937-35.936 0-12.2-6.18-23.17-15.719-29.695 2.189.41 4.433.618 6.712.618 9.599 0 18.624-3.739 25.411-10.526"/>
+                    <path d="m234.391 113.538c-8.049-8.048-21.099-8.048-29.148 0h-42.184l29.829-29.828c11.383 0 20.61-9.228 20.61-20.611s-9.227-20.612-20.61-20.612c-11.384 0-20.611 9.229-20.611 20.612l-29.829 29.829v-42.185c8.049-8.049 8.049-21.099 0-29.148-8.05-8.05-21.1-8.05-29.149 0s-8.049 21.1 0 29.148v42.185l-29.828-29.83c0-11.382-9.228-20.61-20.611-20.61s-20.611 9.228-20.611 20.61c0 11.384 9.228 20.612 20.61 20.612l29.83 29.828h-42.185c-8.05-8.049-21.1-8.048-29.15 0s-8.048 21.1 0 29.15c8.05 8.048 21.1 8.048 29.15 0h42.183l-29.827 29.827c-11.383 0-20.611 9.227-20.611 20.61 0 11.384 9.228 20.612 20.61 20.612 11.384 0 20.612-9.228 20.612-20.611l29.828-29.829v42.184c-8.049 8.049-8.049 21.1 0 29.149 8.05 8.049 21.1 8.049 29.15 0 8.048-8.05 8.048-21.1 0-29.15v-42.183l29.828 29.829c0 11.383 9.227 20.61 20.61 20.61 11.384 0 20.612-9.227 20.612-20.61 0-11.384-9.228-20.611-20.611-20.611l-29.83-29.829h42.185c8.05 8.05 21.1 8.05 29.148 0 8.05-8.049 8.05-21.1 0-29.149" fill="#ffb13b"/>
+                    <title>BugFix Inc.</title>
+                </svg>
+            </a>
+        </h1>
+        <nav class="header-nav"> <!-- nav＝主要なナビゲーションメニューを囲むタグ -->
+            <ul class="header-navlist">
+                <li class="header-navitem">
+                    <a href="#">About</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#">Feature</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="section">
+        <!-- h1はページに1個だけが基本だが、sectionタグ(他には、asideダグ,articleタグ,navタグがある)の中に入れるとh1はレベルが1個下がる仕様(h2になっている) -->
+        <h1 class="section-headline">About</h1>
+        <!-- 画像とそれをせつめいするためのタグ -->
+        <figure class="about">
+            <!-- alt属性＝表示されなかった場合代わりにテキストを表示する -->
+            <img class="about-image" src="https://dummyimage.com/600x400/000/fff" alt="About image">
+            <!-- 図・画像の説明のテキストを入れておく部分 -->
+            <figcaption class="about-caption">
+                <h2 class="about-headline">what we can do?</h2>
+                <p class="about-description">
+                    Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text TextText Text Text Text Text Text Text Text Text Text<br/>
+                    Text Text Text Text Text Text Text Text Text Text Text Text Text Text TextText Text Text Text Text Text Text Text Text TextText Text Text Text Text Text Text Text Text Text<br/>
+                    Text Text Text Text Text Text Text Text Text TextText Text Text Text Text Text Text Text Text TextText Text Text Text Text Text Text Text Text Text<br/>
+                </p>
+            </figcaption>
+        </figure>
+    </section>
+
+
+
+    <section class="section section-secounday">
+        <h1 class="section-headline">Feature</h1>
+
+        <ul class="grid grid-col-4">
+            <li class="grid-item">
+                <dl class="feature"> <!-- dl(データリスト)＝データの見出しとコンテンツを紐づける -->
+                    <dt class="feature-headline">1. Great Service</dt> <!-- dtの後にddがくる。HTMLのルール上この順番を変えることは出来ない。-->
+                    <dd class="feature-img">
+                        <img src="./assets/images/001-settings.png" width="100" height="100" alt="Great Service"> <!-- image＝横幅と高さをタグで設定することができる -->
+                    </dd>
+                    <dd class="feature-description">Text text text text text text text text text text text text text text text...</dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <dl class="feature">
+                    <dt class="feature-headline">2. High Performance</dt>
+                    <dd class="feature-img">
+                        <img src="./assets/images/002-product.png" width="100" height="100" alt="High Performance">
+                    </dd>
+                    <dd class="feature-description">Text text text text text text text text text text text text text text text...</dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <dl class="feature">
+                    <dt class="feature-headline">3. Srtong Responsibility</dt>
+                    <dd class="feature-img">
+                        <img src="./assets/images/003-jigsaw.png" width="100" height="100" alt="Srtong Responsibility">
+                    </dd>
+                    <dd class="feature-description">Text text text text text text text text text text text text text text text...</dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <dl class="feature">
+                    <dt class="feature-headline">4. Excellent Technology</dt>
+                    <dd class="feature-img">
+                        <img src="./assets/images/004-layout.png" width="100" height="100" alt="Excellent Technology">
+                    </dd>
+                    <dd class="feature-description">Text text text text text text text text text text text text text text text...</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <section class="section">
+        <h1 class="section-headline">Blog</h1>
+
+        <ul class="grid grid-col-3">
+            <li class="grid-item">
+                <article class="card"> <!-- articleタグ＝ひと固まりで完結するコンテンツを作るときに使う -->
+                    <a href="#" class="card-link">
+                        <span class="card-label">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-info">
+                            <time class="card-time" datetime="2024-01-01">2024.01.01</time> <!-- timeタグ＝日付を表すためのタグ --> <!-- datetimeでコンピュータに日付である事を伝えている -->
+                            <h1 class="card-headline">Title text text text text text text text</h1>
+                            <p class="card-description">Text text text text text text text text text</p>
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">Seito</dt>
+                            <dd class="avator-image">
+                                <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                            </dd>
+                        </dl>
+                    </a>
+                </article>
+            </li>
+            <li class="grid-item">
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <span class="card-label">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-info">
+                            <time class="card-time" datetime="2024-01-01">2024.01.01</time>
+                            <h1 class="card-headline">Title text text text text text text text</h1>
+                            <p class="card-description">Text text text text text text text text text</p>
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">Seito</dt>
+                            <dd class="avator-image">
+                                <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                            </dd>
+                        </dl>
+                    </a>
+                </article>
+            </li>
+            <li class="grid-item">
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <span class="card-label">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-info">
+                            <time class="card-time" datetime="2024-01-01">2024.01.01</time>
+                            <h1 class="card-headline">Title text text text text text text text</h1>
+                            <p class="card-description">Text text text text text text text text text</p>
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">Seito</dt>
+                            <dd class="avator-image">
+                                <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                            </dd>
+                        </dl>
+                    </a>
+                </article>
+            </li>
+        </ul>
+
+        <div class="section-botton">
+            <a href="#" class="button">
+                Blog Page
+            </a>
+        </div>
+    </section>
+
+
+
+    <section class="section section-secounday">
+        <h1 class="section-headline">Contact</h1>
+
+        <form class="form" action=""> <!-- fromタグ＝フォームでボタンを押して送るようなインタラクティブな要素を使うときにバックエンドとの連携がしやすくなる -->
+            <table class="form-table"> <!-- tableタグ＝ulタグのようにセットで使うものがある -->
+                <tr> <!-- trタグ(table row)＝行を作る -->
+                    <th> <!-- thタグ(table headline)＝見出し -->
+                        <label for="menu">
+                            Menu
+                        </label>
+                    </th>
+                    <td> <!-- tdタグ(table data)＝項目 -->
+                        <select class="select" id="menu"> <!-- selectタグ＝プルダウンメニューが出る -->
+                            <option value="menu-1">Menu 1</option> <!-- potionタグ＝メニューの中の項目 -->
+                            <option value="menu-2">Menu 2</option> <!-- value属性に値を持たせることで、セレクトされたメニューをバックエンドに通信するときに、valueに設定されている値がバックエンド側に行くので２つ設定しておく必要がある。 -->
+                            <option value="menu-3">Menu 3</option> <!-- バックエンド連携でデータベースに値を持たせるときは、なるべく半角スペースや大文字は無い方が良い -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="name"> <!-- labelタグ＝自動的にフォーカスが当たる。カーソルが文字でも反応するようになる。 -->
+                            Name
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="text" id="name"> <!-- inputタグ＝文字を入力するフィールド。email / tel / password と設定することもできる -->
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">
+                            Email
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Gender
+                    </th>
+                    <td>
+                        <label class="radio">
+                            <input type="radio" name="gender" value="male"> Male <!-- name属性でグルーピングすることによって、genderのどれか一つを選択した状態になる -->
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="gender" value="femail"> Femail <!-- typeタグで、radio＝単一選択、checkbox＝複数選択 -->
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="gender" value="other"> Other
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="detail">
+                            Detail
+                        </label>
+                    </th>
+                    <td>
+                        <textarea class="textarea" id="detail" cols="30" rows="10"></textarea> <!-- textareaタグ＝複数行入力できる。 cols＝行数。 rows＝1行あたりの文字数 -->
+                    </td>
+                </tr>
+            </table>
+
+            <div class="form-button">
+                <button class="button button-submission" type="submit">Submit</button> <!-- buttonタグ＝推すことで何かしらアクションを起こす。 <form>を使ってボタンを押したら送信される場合にはtype="submit"を使ううことが多い -->
+            </div>
+        </form>
+    </section>
+
+    <aside class="works"> <!-- asideタグ＝メインコンテンツの補間をするために使うタグ。サブ的な要素だったり、公告を囲ったりするときに使う -->
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+    </aside>
+
+    <footer class="footer"> <!-- foooterタグ＝フッターを作るためのタグ -->
+        <figure class="footer-map">        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280295764384!2d139.76261868885499!3d35.681236200000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1716781463724!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- iframeタグ＝外部のWeb情報を埋め込む -->
+            <fibcaption class="footer-mapinfo">
+                <div class="footer-maplogo">
+                    <svg height="80" preserveAspectRatio="xMidYMid" viewBox="0 .232 259.247 255.761" width="80" xmlns="http://www.w3.org/2000/svg"><path d="m245.235 153.524c14.012-14.012 14.011-36.811 0-50.823-6.787-6.788-15.812-10.525-25.411-10.525-2.28 0-4.523.208-6.712.617 9.538-6.524 15.72-17.495 15.72-29.694 0-19.816-16.122-35.937-35.938-35.937-12.223 0-23.213 6.205-29.733 15.776 2.157-11.377-1.226-23.537-9.87-32.18-6.785-6.788-15.811-10.526-25.409-10.526-9.6 0-18.624 3.738-25.412 10.526-8.643 8.643-12.026 20.803-9.87 32.18-6.519-9.57-17.509-15.776-29.733-15.776-19.815 0-35.936 16.12-35.936 35.937 0 12.2 6.18 23.17 15.718 29.694a36.487 36.487 0 0 0 -6.711-.617c-9.6 0-18.624 3.738-25.411 10.526-6.789 6.787-10.527 15.812-10.527 25.41 0 9.6 3.738 18.624 10.526 25.412 6.787 6.787 15.812 10.526 25.41 10.526 2.28 0 4.523-.208 6.712-.618-9.538 6.525-15.718 17.496-15.718 29.695 0 19.815 16.12 35.936 35.936 35.936 12.224 0 23.215-6.206 29.734-15.776-2.157 11.378 1.226 23.538 9.87 32.18 6.787 6.788 15.812 10.526 25.41 10.526 9.6 0 18.625-3.738 25.412-10.526 8.643-8.643 12.026-20.803 9.869-32.18 6.52 9.57 17.51 15.776 29.733 15.776 19.816 0 35.937-16.12 35.937-35.936 0-12.2-6.18-23.17-15.719-29.695 2.189.41 4.433.618 6.712.618 9.599 0 18.624-3.739 25.411-10.526"/><path d="m234.391 113.538c-8.049-8.048-21.099-8.048-29.148 0h-42.184l29.829-29.828c11.383 0 20.61-9.228 20.61-20.611s-9.227-20.612-20.61-20.612c-11.384 0-20.611 9.229-20.611 20.612l-29.829 29.829v-42.185c8.049-8.049 8.049-21.099 0-29.148-8.05-8.05-21.1-8.05-29.149 0s-8.049 21.1 0 29.148v42.185l-29.828-29.83c0-11.382-9.228-20.61-20.611-20.61s-20.611 9.228-20.611 20.61c0 11.384 9.228 20.612 20.61 20.612l29.83 29.828h-42.185c-8.05-8.049-21.1-8.048-29.15 0s-8.048 21.1 0 29.15c8.05 8.048 21.1 8.048 29.15 0h42.183l-29.827 29.827c-11.383 0-20.611 9.227-20.611 20.61 0 11.384 9.228 20.612 20.61 20.612 11.384 0 20.612-9.228 20.612-20.611l29.828-29.829v42.184c-8.049 8.049-8.049 21.1 0 29.149 8.05 8.049 21.1 8.049 29.15 0 8.048-8.05 8.048-21.1 0-29.15v-42.183l29.828 29.829c0 11.383 9.227 20.61 20.61 20.61 11.384 0 20.612-9.227 20.612-20.61 0-11.384-9.228-20.611-20.611-20.611l-29.83-29.829h42.185c8.05 8.05 21.1 8.05 29.148 0 8.05-8.049 8.05-21.1 0-29.149" fill="#ffb13b"/></svg>
+                    BugFix Inc.
+                </div>
+                <address class="footer-mapaddress"> <!-- addressタグ＝住所を囲うだけのタグ -->
+                    〒100-0000東京都千代田区丸の内1-1-1<br/> <!-- brタグ＝閉じタグはどっちでも良い言われている -->
+                    <a href="https://maps.app.goo.gl/udNTdwo2FoDdzxDb9" target="_blank">Google Map</a> <!-- target属性でブランクを設定するとクリックすると別タグで開く -->
+                </address>
+            </fibcaption>
+        </figure>
+        <hr class="footer-line"> <!-- hrタグ＝ラインをつくることができるタグ -->
+        <small class="footer-copy">Copyright ©BugFix Inc.</small> <!-- smallタグ＝コピーライトを作るためだけのタグ -->
+    </footer>
+
+
+
+    <!-- JavaScriptの反映 -->
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
